@@ -1,0 +1,34 @@
+[2019-12-14 11:15:40] INFO [<module>: runAll.py, 8] ================================== 接口测试开始 ==================================
+[2019-12-14 11:15:40] INFO [log_case_info: log_case.py, 16] 测试用例名称：test_login_wrong
+[2019-12-14 11:15:40] INFO [log_case_info: log_case.py, 17] URL:http://localhost:8080/managerLogin 
+[2019-12-14 11:15:40] INFO [log_case_info: log_case.py, 18] 请求参数：{"managerUsername":"李四","managerPassword":"123456"}
+[2019-12-14 11:15:40] INFO [log_case_info: log_case.py, 19] 预期结果:{"msg":"登录成功","code":"200","manager":{"managerId":"1","managerUsername":"李四","managerPassword":"123456","managerRealname":"李四","idNumber":"510922197608213458","managerPhonenumber":"15828964506","deptId":"1"}}
+[2019-12-14 11:15:40] INFO [log_case_info: log_case.py, 20] 实际结果:<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>Error 403 No valid crumb was included in the request</title>
+</head>
+<body><h2>HTTP ERROR 403</h2>
+<p>Problem accessing /managerLogin%20. Reason:
+<pre>    No valid crumb was included in the request</pre></p><hr><a href="http://eclipse.org/jetty">Powered by Jetty:// 9.4.z-SNAPSHOT</a><hr/>
+
+</body>
+</html>
+
+[2019-12-14 11:15:40] INFO [log_case_info: log_case.py, 16] 测试用例名称：test_select_normal
+[2019-12-14 11:15:40] INFO [log_case_info: log_case.py, 17] URL:http://localhost:8080/empSelectByIdControll
+[2019-12-14 11:15:40] INFO [log_case_info: log_case.py, 18] 请求参数：{"empName":"哥哥","managerId":"1"}
+[2019-12-14 11:15:40] INFO [log_case_info: log_case.py, 19] 预期结果:{"msg":"成功","code":"200","empmsg":{"empId":"e1e7756fe50845b4a7ec65423be6f11e","managerId":"1","empName":"哥哥","empPhone":"124324324","empCarid":"34324","empSex":"男"}}
+[2019-12-14 11:15:40] INFO [log_case_info: log_case.py, 20] 实际结果:<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>Error 403 No valid crumb was included in the request</title>
+</head>
+<body><h2>HTTP ERROR 403</h2>
+<p>Problem accessing /empSelectByIdControll. Reason:
+<pre>    No valid crumb was included in the request</pre></p><hr><a href="http://eclipse.org/jetty">Powered by Jetty:// 9.4.z-SNAPSHOT</a><hr/>
+
+</body>
+</html>
+
+[2019-12-14 11:15:40] INFO [<module>: runAll.py, 17] ================================== 接口测试结束 ==================================
